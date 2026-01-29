@@ -1,0 +1,42 @@
+{
+  "locations": [
+    {
+      "id": "2",
+      "name": "Dogra Hall",
+      "lat": 28.5448,
+      "lng": 77.192,
+      "description": "Main auditorium."
+    },
+    {
+      "name": "BioTech Lawn",
+      "description": "Open Ground for Activites",
+      "lat": 28.545039809151998,
+      "lng": 77.19353024382146,
+      "id": "1769150196083"
+    },
+    {
+      "name": "Lecture Hall Complex",
+      "description": "",
+      "lat": 28.543234971773366,
+      "lng": 77.19317619223148,
+      "id": "1769150514497"
+    }
+  ],
+  "events": [
+    {
+      "id": "101",
+      "name": "Opening Ceremony",
+      "locationId": "2",
+      "startTime": "2026-02-01T09:00:00Z",
+      "endTime": "2026-02-01T11:00:00Z",
+      "description": "Welcome to BECon 2026."
+    },
+    {
+      "name": "Games",
+      "startTime": "2026-01-23T12:12",
+      "endTime": "2026-01-23T12:12",
+      "locationId": "1769150196083",
+      "id": "1769150543647"
+    }
+  ]
+}

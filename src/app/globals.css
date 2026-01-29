@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+
+  --color-becon-bg: #05020a;
+  --color-becon-primary: #7c3aed;
+  --color-becon-secondary: #4c1d95;
+  --color-becon-accent: #a78bfa;
+  --color-becon-glass: rgba(255, 255, 255, 0.05);
+  --color-becon-glass-border: rgba(255, 255, 255, 0.1);
+
+  --background-image-hero-gradient: radial-gradient(circle at 50% 50%, #2e1065 0%, #05020a 70%);
+  --background-image-card-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--color-becon-bg);
+  color: white;
+  font-family: var(--font-sans);
+}
+
+/* Scrollbar Hiding */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Utilities */
+@utility glass-card {
+  background: var(--color-becon-glass);
+  border: 1px solid var(--color-becon-glass-border);
+  backdrop-filter: blur(10px);
+}
+
+@utility perspective-1000 {
+  perspective: 1000px;
+}
+
+@utility preserve-3d {
+  transform-style: preserve-3d;
+}
+
+@utility backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@utility rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@utility animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+@utility animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+@utility description-reveal {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
