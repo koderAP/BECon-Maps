@@ -40,14 +40,14 @@ export default function Home() {
   );
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between relative bg-becon-bg text-white overflow-hidden">
-      <div className="absolute inset-2 sm:inset-4 z-0 rounded-3xl overflow-hidden border border-white/20 shadow-2xl opacity-100">
+    <main className="flex h-[100dvh] flex-col items-center justify-between relative bg-becon-bg text-white overflow-hidden">
+      <div className="absolute inset-0 sm:inset-4 z-0 rounded-none sm:rounded-3xl overflow-hidden border-0 sm:border border-white/20 shadow-2xl opacity-100">
         <Map locations={locations} />
       </div>
 
       {/* Header */}
-      <div className="z-10 w-full p-6 pointer-events-none">
-        <div className="p-6 rounded-2xl shadow-xl pointer-events-auto max-w-md mx-auto sm:mx-0 animate-fade-in bg-[#05020a] border border-white/20">
+      <div className="z-10 w-full p-4 sm:p-6 pointer-events-none">
+        <div className="p-4 sm:p-6 rounded-2xl shadow-xl pointer-events-auto max-w-md mx-auto sm:mx-0 animate-fade-in bg-[#05020a] border border-white/20">
           <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-becon-accent to-purple-400">BECon Maps</h1>
           <p className="text-sm text-gray-300 mt-1">Navigate the summit like a pro.</p>
         </div>
@@ -156,7 +156,7 @@ export default function Home() {
       </div>
 
       {/* Controls (Bottom Bar) */}
-      <div className="z-10 w-full p-6 pointer-events-none mt-auto">
+      <div className="z-10 w-full p-4 sm:p-6 pointer-events-none mt-auto">
         <div className="p-4 rounded-2xl shadow-lg pointer-events-auto flex justify-between items-center max-w-3xl mx-auto bg-[#05020a] border border-white/20">
           <div className="flex gap-3">
             <button
